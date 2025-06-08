@@ -17,7 +17,7 @@ const AppContextProvider = ({ children }) => {
   const getData = async () => {
     axios.defaults.withCredentials=true
     try {
-      const response = await axios.get('http://localhost:3000/api/auth/data', {
+      const response = await axios.get('https://auth-mern-backend-blush.vercel.app/api/auth/data', {
         headers: { 'Content-Type': 'application/json' },
         withCredentials: true,
       });
