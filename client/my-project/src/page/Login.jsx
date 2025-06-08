@@ -16,7 +16,7 @@ const Login = () => {
      axios.defaults.withCredentials=true
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/api/register",
+        "https://auth-mern-backend-blush.vercel.app/api/register",
         { name, password, email },
         { headers: { "Content-Type": "Application/json" } }
       );
@@ -27,7 +27,7 @@ const Login = () => {
         GetData
       } else {
        const { data } = await axios.post(
-        "http://localhost:3000/api/login",
+        "https://auth-mern-backend-blush.vercel.app/api/login",
         { password, email },
         { headers: { "Content-Type": "Application/json" },withCredentials: true, }
       );
