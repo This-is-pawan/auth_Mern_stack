@@ -12,7 +12,7 @@ const Home = () => {
     // axios.defaults.withCredentials = true;
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/logout",
+        "https://auth-mern-backend-blush.vercel.app/api/logout",
         {},
         {
           headers: { "Content-Type": "application/json" },
